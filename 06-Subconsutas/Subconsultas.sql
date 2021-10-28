@@ -10,3 +10,7 @@ SELECT *FROM film WHERE film_id IN(SELECT film_id FROM film_category WHERE  cate
 SELECT film_id FROM film_category WHERE category_id=5;
 /*betweem rango*/
 SELECT *FROM film WHERE film_id BETWEEN 1 AND 10;
+
+SElECT  *FROM film WHERE film_id IN(SELECT film_id FROM film_actor WHERE first_name="NIKE") ;
+
+
